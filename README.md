@@ -1,4 +1,4 @@
-# VideoRecorder
+# VideoRecorder  |  <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/logo.png" width="70"/>
 Test Application for record Video from Front camera and upload to server (MVVM,Dagger,Retrofit,Camera)
 
    
@@ -12,9 +12,9 @@ Test Application for record Video from Front camera and upload to server (MVVM,D
   
   
 ## screenshot
-<img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/ready.png" width="250"/> | <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/recording.png" width="250"/> | <img src="https://github.com/sinadalvand/BoobmKhande/blob/master/art/settings.jpg" width="250"/>
+<img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/ready.png" width="250"/> | <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/recording.png" width="250"/>
 																	---------------------------------------------------
-<img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/success.png" width="250"/> | <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/recording.png" width="250"/> | <img src="https://github.com/sinadalvand/BoobmKhande/blob/master/art/failed.png" width="250"/>
+<img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/success.png" width="250"/> | <img src="https://github.com/sinadalvand/BoobmKhande/blob/master/art/failed.png" width="250"/>
 
   
   
