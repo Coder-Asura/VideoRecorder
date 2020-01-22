@@ -9,11 +9,15 @@ Test Application for record Video from Front camera and upload to server (MVVM,D
   * include server code in server folder (PHP)
   
   
+  
+  
 ## screenshot
 <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/ready.png" width="250"/> | <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/recording.png" width="250"/> | <img src="https://github.com/sinadalvand/BoobmKhande/blob/master/art/settings.jpg" width="250"/>
 																	---------------------------------------------------
 <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/success.png" width="250"/> | <img src="https://github.com/sinadalvand/VideoRecorder/blob/master/art/recording.png" width="250"/> | <img src="https://github.com/sinadalvand/BoobmKhande/blob/master/art/failed.png" width="250"/>
 
+  
+  
   
 
 # Licence
