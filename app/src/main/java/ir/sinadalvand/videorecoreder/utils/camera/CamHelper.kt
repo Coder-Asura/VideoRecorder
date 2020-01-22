@@ -32,7 +32,7 @@ class CamHelper(private var surfaceHolder: SurfaceHolder,val context:Context) : 
 
     // set details to surface
     init {
-        surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+        surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS)
         surfaceHolder.addCallback(this)
     }
 
@@ -176,8 +176,8 @@ class CamHelper(private var surfaceHolder: SurfaceHolder,val context:Context) : 
 
     // set front to cam
     private fun getCamParams(type: Int): Camera.Parameters {
-        val parameters = camera!!.getParameters();
-        parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
+        val parameters = camera!!.parameters
+        parameters.focusMode = Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO
         parameters.set("cam_mode", type)
         return parameters
     }
@@ -207,7 +207,7 @@ class CamHelper(private var surfaceHolder: SurfaceHolder,val context:Context) : 
     fun deleteFile(filePath: String) {
         val file = File(filePath)
         if (file.exists()) {
-            if (file.isFile()) {
+            if (file.isFile) {
                 file.delete()
             } else {
                 val filePaths: Array<String> = file.list()

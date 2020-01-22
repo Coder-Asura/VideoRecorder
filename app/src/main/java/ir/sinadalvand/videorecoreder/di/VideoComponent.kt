@@ -19,6 +19,4 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [AndroidSupportInjectionModule::class,NetworkModule::class, ActivityModule::class,ViewModelModule::class])
-interface VideoComponent :AndroidInjector<VidApplication>{
-
-}
+interface VideoComponent :AndroidInjector<VidApplication>

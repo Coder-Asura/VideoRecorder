@@ -293,12 +293,9 @@ class MainActivity : XappCompatActivity<MainActivityViewModel>(),
 
 
         adView.setNativeAd(nativeAd)
-        val vc = nativeAd!!.videoController
+        val vc = nativeAd.videoController
         if (vc.hasVideoContent()) {
             vc.videoLifecycleCallbacks = object : VideoController.VideoLifecycleCallbacks() {
-                override fun onVideoEnd() {
-                    super.onVideoEnd()
-                }
             }
         }
 

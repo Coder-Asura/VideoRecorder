@@ -10,11 +10,10 @@ package ir.sinadalvand.videorecoreder.core.xpack
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import io.reactivex.disposables.Disposable
+
 
 abstract class XviewModel : ViewModel() {
 
-    protected val disposables = arrayListOf<Disposable>()
 
     private var firstFetch = true
 
@@ -30,11 +29,5 @@ abstract class XviewModel : ViewModel() {
 
     protected fun <T> valueEqualment(newData: T, oldData: T): Boolean {
         return newData == oldData
-    }
-
-    override fun onCleared() {
-        for (disposable in disposables)
-            disposable.dispose()
-        super.onCleared()
     }
 }
