@@ -1,0 +1,13 @@
+<!--
+  ~
+  ~   Created by Sina Dalvand on 1/22/2020
+  ~   Copyright (c) 2020 . All rights reserved.
+  ~
+  ~
+  -->
+
+<vector android:alpha="0.84" android:height="24dp"
+    android:viewportHeight="24" android:viewportWidth="24"
+    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#313131" android:pathData="M14.123,11.999 L23.56,2.562A1.5,1.5 0,1 0,21.438 0.44L12,9.878 2.562,0.44A1.5,1.5 0,0 0,0.44 2.562L9.878,11.999 0.44,21.438a1.5,1.5 0,1 0,2.122 2.122L12,14.122l9.438,9.438a1.5,1.5 0,0 0,2.122 -2.122Z"/>
+</vector>

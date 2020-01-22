@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "ir.sinadalvand.videorecoreder"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "ad_application_id", "\"ca-app-pub-2677267397150604~8577235462\""
+        resValue "string", "ad_application_id", "ca-app-pub-2677267397150604~8577235462"
+        buildConfigField "String", "ad_banner_id", "\"ca-app-pub-3940256099942544/1044960115\""
+        buildConfigField "String", "upload_url", "\"http://10.0.2.2/\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+
+    // Google AD
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+
+    // dagger 2 dependency
+    api 'com.google.dagger:dagger:2.24'
+    kapt 'com.google.dagger:dagger-compiler:2.24'
+    api 'com.google.dagger:dagger-android-support:2.24'
+    kapt 'com.google.dagger:dagger-android-processor:2.24'
+
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+
+    // Lifecycle components
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.1.0'
+
+
+    // best tool for log
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+}
